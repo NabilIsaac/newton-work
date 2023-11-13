@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Audio Page</title>
+    <style>
+      /* Internal CSS for the Audio Page */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+
+      .title {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .audio-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+      }
+
+      .audio-item {
+        width: 200px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      audio {
+        width: 100%;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </a>
+        <!--Menu Icon-->
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!--Links-->
+        <ul class="navbar">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="audios.html">Audio</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+
+    </header>
+    <div class="title">
+      <h1>Audio Page</h1>
+    </div>
+
+    <section class="audio-list">
+      <!-- Audio 1 -->
+      <div class="audio-item">
+        <h3>Audio 1</h3>
+        <audio controls>
+          <source src="path/to/audio1.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <!-- Audio 2 -->
+      <div class="audio-item">
+        <h3>Audio 2</h3>
+        <audio controls>
+          <source src="path/to/audio2.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <!-- Add more audio items as needed -->
+    </section>
+  </body>
+</html>

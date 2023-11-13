@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive entertainment website</title>
+    <!--Link To CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!--Box Icons-->
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <header>
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="" />
+      </a>
+      <!--Menu Icon-->
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <!--Links-->
+      <ul class="navbar">
+        <li><a href="index.html">Index</a></li>
+        <li><a href="images.html">Images</a></li>
+        <li><a href="audios.html">Audio</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+      </ul>
+    </header>
+    <!-- Image Grid Section -->
+    <section
+      style="
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+      "
+    >
+      <!-- Image 1 -->
+      <div
+        style="
+          position: relative;
+          overflow: hidden;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <img
+          src="assets/images//madin.jpg"
+          alt="Image 1"
+          style="width: 100%; height: auto; display: block"
+        />
+        <div
+          style="
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            font-size: 14px;
+          "
+        >
+          Caption for Image 1
+        </div>
+      </div>
+
+      <!-- Repeat similar structure for Image 2 to Image 6 with different paths and captions -->
+    </section>
+
+    <!--Link To JS-->
+    <script src="main.js"></script>
+  </body>
+</html>

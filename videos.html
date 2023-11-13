@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive entertainment website</title>
+    <!--Link To CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!--Box Icons-->
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <header>
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="" />
+      </a>
+      <!--Menu Icon-->
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <!--Links-->
+      <ul class="navbar">
+        <li><a href="index.html">Index</a></li>
+        <li><a href="images.html">Images</a></li>
+        <li><a href="audios.html">Audio</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+      </ul>
+    </header>
+    <!-- Image Grid Section -->
+    <div class="title">
+      <h1>Video Page</h1>
+    </div>
+
+    <section class="video-list">
+      <!-- Video 1 -->
+      <div class="video-item">
+        <h3>Video 1</h3>
+        <video controls>
+          <source src="path/to/video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-item">
+        <h3>Video 2</h3>
+        <video controls>
+          <source src="path/to/video2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Add more video items as needed -->
+    </section>
+
+    <!--Link To JS-->
+    <script src="main.js"></script>
+  </body>
+</html>
