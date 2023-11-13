@@ -6,21 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive entertainment website</title>
-    <!--Link To CSS-->
+    <!-- Link To CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <!--Box Icons-->
+    <!-- Box Icons -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .navbar {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            background-color: #555;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .index {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .index-text {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .index-text img {
+            max-width: 50%;
+            margin-right: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .index-text p {
+            max-width: 50%;
+            text-align: left;
+        }
+
+        #zoomButton {
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
-    <!--Navbar-->
+    <!-- Navbar -->
     <header>
         <a href="index.html" class="logo">
             <img src="assets/images/logo.png" alt="">
         </a>
-        <!--Menu Icon-->
+        <!-- Menu Icon -->
         <i class='bx bx-menu' id="menu-icon"></i>
-        <!--Links-->
+        <!-- Links -->
         <ul class="navbar">
             <li><a href="index.html">Index</a></li>
             <li><a href="images.html">Images</a></li>
@@ -28,18 +90,28 @@
             <li><a href="videos.html">Videos</a></li>
             <li><a href="about-us.html">About Us</a></li>
         </ul>
-
     </header>
+
+    <!-- About Us Section -->
     <section class="index" id="index">
         <div class="index-text">
-            <hi> About Me</hi>
-            <p>My name is Pastor Okai, i come from Bolgatanga but i cant speak my language and you all suck</p>
-            <a href="#" class="btn">Shop Now</a>
+            <img id="zoomImage" src="path/to/your/image.jpg" alt="Pastor Okai's Image">
+            <div>
+                <h1>About Me</h1>
+                <p>My name is Pastor Okai, I come from Bolgatanga but I can't speak my language, and you all suck.</p>
+                <button id="zoomButton" onclick="zoomImage()">Zoom In</button>
+            </div>
         </div>
     </section>
 
-    <!--Link To JS-->
+    <!-- Link To JS -->
     <script src="main.js"></script>
+    <script>
+        function zoomImage() {
+            var image = document.getElementById("zoomImage");
+            image.style.transform = "scale(1.5)"; // Adjust the scale factor as needed
+        }
+    </script>
 </body>
 
 </html>
